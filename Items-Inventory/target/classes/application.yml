@@ -1,0 +1,12 @@
+server:
+  port: 9090
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          auto-add-partitions: true
+      bindings:
+        item-added-events:
+          destination: item-queue
+
